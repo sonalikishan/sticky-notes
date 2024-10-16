@@ -74,3 +74,24 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Random colors for sticky notes */
+.color-yellow {
+    background-color: #ffecb3;
+}
+
+.color-green {
+    background-color: #c3e6cb;
+}
+
+.color-blue {
+    background-color: #b3d7ff;
+}
+
+.color-pink {
+    background-color: #f3c3ff;
+}
+
+.color-purple {
+    background-color: #d1c4e9;
+}

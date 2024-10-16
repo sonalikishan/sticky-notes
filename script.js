@@ -1,3 +1,4 @@
+const colors = ['color-yellow', 'color-green', 'color-blue', 'color-pink', 'color-purple'];
 function renderNotes() {
     const notesContainer = document.getElementById('notes-container');
     notesContainer.innerHTML = '';  
