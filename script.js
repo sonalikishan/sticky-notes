@@ -9,9 +9,16 @@ function renderNotes() {
         const noteContent = document.createElement('p');
         noteContent.textContent = note.text;
 
+        const closeBtn = document.createElement('span');
+        closeBtn.textContent = 'X';
+        closeBtn.classList.add('close-btn');
+        closeBtn.addEventListener('click', function() {
+            removeNote(index);
+        });
+
 
         newNote.appendChild(noteContent);
-      
+        newNote.appendChild(closeBtn);
         notesContainer.appendChild(newNote);
     });
 }
@@ -29,5 +36,11 @@ document.getElementById('add-note-btn').addEventListener('click', function() {
         document.getElementById('new-note-input').value = '';  // Clear input field
     }
 });
+
+function removeNote(index) {
+    notes.splice(index, 1);  
+     
+    renderNotes();  
+}
 
 document.addEventListener('DOMContentLoaded', renderNotes);
